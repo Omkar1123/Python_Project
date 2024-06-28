@@ -10,7 +10,7 @@ ${url}  https://demo.nopcommerce.com
 Testing Radio Button and checkboxes
     open browser    ${url}  ${browser}
     maximize browser window
-    #set selenium speed  2seconds
+    #sel selenium speed  2seconds
     title should be     nopCommerce demo store
     click link      xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a
     select radio button     Gender  M

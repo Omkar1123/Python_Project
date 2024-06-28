@@ -1,98 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-06-26T14:08:35.043349" rpa="false" schemaversion="5">
-<suite id="s1" name="Radiobuttons" source="/Users/omkar/PycharmProjects/pythonProject/TestCases/Radiobuttons.robot">
-<test id="s1-t1" name="Testing Radio Button and checkboxes" line="10">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:35.442719" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-26T14:08:35.442479" elapsed="7.051213"/>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-06-28T17:44:17.229868" rpa="false" schemaversion="5">
+<suite id="s1" name="TC2" source="/Users/omkar/Desktop/PythonProject/Test_cases/TC2.robot">
+<test id="s1-t1" name="Google" line="8">
+<kw name="Is Pal" owner="assign1">
+<msg time="2024-06-28T17:44:18.574126" level="INFO">${json_body} = Yes</msg>
+<var>${json_body}</var>
+<arg>abccba</arg>
+<status status="PASS" start="2024-06-28T17:44:18.573905" elapsed="0.000259"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-26T14:08:42.495402" elapsed="0.779588"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${json_body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-28T17:44:18.574399" elapsed="0.000199"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:46.071642" level="INFO">Page title is 'nopCommerce demo store'.</msg>
-<arg>nopCommerce demo store</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-06-26T14:08:43.275285" elapsed="2.796499"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:46.072627" level="INFO">Clicking link 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a'.</msg>
-<arg>xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:46.072062" elapsed="3.672876"/>
-</kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:49.745715" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
-<arg>Gender</arg>
-<arg>M</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2024-06-26T14:08:49.745250" elapsed="1.018232"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:50.763996" level="INFO">Typing text 'Omkar' into text field 'id:FirstName'.</msg>
-<arg>id:FirstName</arg>
-<arg>Omkar</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:50.763776" elapsed="0.543457"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:51.307738" level="INFO">Typing text 'Hase' into text field 'id:LastName'.</msg>
-<arg>id:LastName</arg>
-<arg>Hase</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:51.307519" elapsed="0.435714"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:51.743897" level="INFO">Typing text 'omkar@gmail.com' into text field 'id:Email'.</msg>
-<arg>id:Email</arg>
-<arg>omkar@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:51.743625" elapsed="0.146057"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:51.890086" level="INFO">Typing text 'DI' into text field 'id:Company'.</msg>
-<arg>id:Company</arg>
-<arg>DI</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:51.889915" elapsed="0.105391"/>
-</kw>
-<kw name="Unselect Checkbox" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:51.995842" level="INFO">Unselecting checkbox 'Newsletter'.</msg>
-<arg>Newsletter</arg>
-<doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:51.995625" elapsed="0.498134"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:52.494391" level="INFO">Typing text 'omkar' into text field 'id:Password'.</msg>
-<arg>id:Password</arg>
-<arg>omkar</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:52.494131" elapsed="0.120369"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-26T14:08:52.614994" level="INFO">Typing text 'omkar' into text field 'id:ConfirmPassword'.</msg>
-<arg>id:ConfirmPassword</arg>
-<arg>omkar</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-26T14:08:52.614779" elapsed="0.098723"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-26T14:08:57.714534" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-26T14:08:52.713750" elapsed="5.000931"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-26T14:08:57.714926" elapsed="0.111860"/>
-</kw>
-<status status="PASS" start="2024-06-26T14:08:35.441681" elapsed="22.385362"/>
+<status status="PASS" start="2024-06-28T17:44:18.572907" elapsed="0.001857"/>
 </test>
-<status status="PASS" start="2024-06-26T14:08:35.046846" elapsed="22.780709"/>
+<status status="PASS" start="2024-06-28T17:44:17.235785" elapsed="1.339455"/>
 </suite>
 <statistics>
 <total>
@@ -101,7 +24,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Radiobuttons">Radiobuttons</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC2">TC2</stat>
 </suite>
 </statistics>
 <errors>
